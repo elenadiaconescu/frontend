@@ -47,4 +47,4 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     $ npm run dev
 
-Project will start local on port 5000
+Project will start locally on port 5000
