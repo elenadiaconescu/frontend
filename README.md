@@ -1,6 +1,6 @@
 # Elena Diaconescu
 
-A nice project where can be found a brief descrition about my career and what motivates me
+A nice project where can be found a brief description about my career and what motivates me
 
 ---
 ## Requirements
