@@ -39,10 +39,12 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Install
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
+    $ git clone https://github.com/elenadiaconescu/frontend
+    $ cd frontend
     $ npm install
 
 ## Running the project
 
     $ npm run dev
+
+Project will start local on port 5000
