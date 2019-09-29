@@ -52,7 +52,7 @@ const server = http.createServer((req, res) => {
       } else {
         // some server error 500
         res.writeHead(500);
-        res.end(`Minion - Server crashed error : ${err.code}`);
+        res.end(`Midget - Server crashed error : ${err.code}`);
       }
     } else {
       // sucess
@@ -64,4 +64,4 @@ const server = http.createServer((req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-server.listen(PORT, () => console.log(`Minion-server running on port ${PORT}`));
+server.listen(PORT, () => console.log(`Midget-server running on port ${PORT}`));
