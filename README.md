@@ -1,4 +1,4 @@
-# Elena Diaconescu CV
+# Elena Diaconescu
 
 A nice project where can be found a brief descrition about my career and what motivates me
 
