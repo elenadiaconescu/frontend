@@ -1,3 +1,4 @@
 # Dependency directories
 node_modules/
 logger.js
+package-lock.json
