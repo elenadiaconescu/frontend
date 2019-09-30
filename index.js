@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
   // ~~~~ we will make the path file dynamic ~~~~  build file path
   let filePath = path.join(
     __dirname,
-    'public',
+    'src',
     req.url === '/' ? 'index.html' : req.url
   );
 //   console.log(filePath);
@@ -44,7 +44,7 @@ const server = http.createServer((req, res) => {
       if (err.code == 'ENOENT') {
         // page not found
         fs.readFile(
-          path.join(__dirname, 'public', '404.html'),
+          path.join(__dirname, 'src', '404.html'),
           (err, content) => {
             res.writeHead(200, { 'Content-Type': contentType });
             res.end(content, 'utf8');
