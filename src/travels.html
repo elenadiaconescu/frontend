@@ -2,27 +2,75 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Travels</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/estilo-geral.css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- JavaScript and jQuery-->
+    <script type="text/javascript" src="js/jsGeral.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!-- Materialize-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE8">
+    <meta name="author" content="Elena Diaconescu">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
 </head>
 
-<body>
-    <article title="Places I lived in">
-        <header>
-            <h1>Travels</h1>
-            <h3>
-                <ol class="ed-menu">
-                    <ul class="ed-item" active><a href="index.html">Home </a></ul>
-                    <ul class="ed-item"><a href="travels.html">Travels </a></ul>
-                    <ul class="ed-item"><a href="projects.html">Projects </a></ul>
-                    <ul class="ed-item"> <a href="about.html">About </a></ul>
-                </ol>
-            </h3>
-        </header>
+<body onload="mouseOverMenu(document.getElementById('logo'), 'Travels');">
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="nav-wrapper grey darken-4">
+                <a href="principal.html" class="brand-logo center" id="logo">Travels</a>
 
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a onmouseover="mouseOverMenu(this, 'Home');" href="index.html">Home</a></li>
+                    <li><a onmouseover="mouseOverMenu(this, 'Travels');" href="travels.html"
+                            class="nav-link scroll">Travels</a></li>
+                    <li><a onmouseover="mouseOverMenu(this, 'Projects');" href="projects.html"
+                            class="nav-link scroll">Projects</a></li>
+                    <li><a onmouseover="mouseOverMenu(this, 'About');" href="about.html"
+                            class="nav-link scroll">About</a>
+                    </li>
+                </ul>
+
+                <ul id="slide-out" class="sidenav">
+                    <li><a class="waves-effect" href="index.html">Home</a></li>
+                    <li><a class="waves-effect" href="travels.html">Travels</a></li>
+                    <li><a class="waves-effect" href="projects.html">Projects</a></li>
+                    <li><a class="waves-effect" href="about.html">About</a></li>
+                </ul>
+                <a data-target="slide-out" class="sidenav-trigger" href="#"><i class="material-icons">menu</i></a>
+
+            </div>
+        </nav>
+
+    </header>
+    <!-- CONTENT -->
+    <div class="">
         <h3>Places I lived in</h3>
         <ul>
             <li>Bacau - Romenia</li>
@@ -32,18 +80,18 @@
             <li>Bucharest - Romenia</li>
             <li>Prague - Czech Republic </li>
         </ul>
-    </article>
+        </article>
 
-    <article title="Cities I travelled">
-        <h3>Places I travelled</h3>
-        <ul>
-            <li>Cities in Romenia</li>
-            <li>Cities in Portugal</li>
-            <li>Cities in Czech Republic </li>
-            <li>Random cities in Europe</li>
-        </ul>
-    </article>
-
+        <article title="Cities I travelled">
+            <h3>Places I travelled</h3>
+            <ul>
+                <li>Cities in Romenia</li>
+                <li>Cities in Portugal</li>
+                <li>Cities in Czech Republic </li>
+                <li>Random cities in Europe</li>
+            </ul>
+        </article>
+    </div>
 </body>
 
 <hr />

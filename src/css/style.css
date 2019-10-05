@@ -1,5 +1,6 @@
-body,
-a {
-  background: #333;
-  color: #fff;
+footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    text-align: left;
 }
