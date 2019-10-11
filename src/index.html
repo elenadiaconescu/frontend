@@ -13,14 +13,61 @@
     <script type="text/javascript" src="js/jsGeral.js"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
 
     <!-- Materialize-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="materialize/css/materialize.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- parallax -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function () {
+            $('.target').pushpin();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var scrollLink = $('.scroll');
+
+            // Smooth scrolling
+            scrollLink.click(function (e) {
+                e.preventDefault();
+                $('body,html').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+
+            // Active link switching
+            $(window).scroll(function () {
+                var scrollbarLocation = $(this).scrollTop();
+
+                scrollLink.each(function () {
+
+                    var sectionOffset = $(this.hash).offset().top - 20;
+
+                    if (sectionOffset <= scrollbarLocation) {
+                        $(this).parent().addClass('active');
+                        $(this).parent().siblings().removeClass('active');
+                    }
+                })
+            })
+        })
+    </script>
+
 
 </head>
 
@@ -29,7 +76,7 @@
     <header>
         <nav>
             <div class="nav-wrapper grey darken-4">
-                <a href="principal.html" class="brand-logo center" id="logo">Elena Diaconescu</a>
+                <a href="index.html" class="brand-logo center" id="logo">Elena Diaconescu</a>
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a onmouseover="mouseOverMenu(this, 'Home');" href="index.html">Home</a></li>
@@ -107,57 +154,13 @@
         </section>
     </div>
 
-    
+
     <footer>
         &copy Elena Diaconescu 2019
     </footer>
 
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.parallax').parallax();
-        });
 
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-
-        $(document).ready(function () {
-            $('.target').pushpin();
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-
-            var scrollLink = $('.scroll');
-
-            // Smooth scrolling
-            scrollLink.click(function (e) {
-                e.preventDefault();
-                $('body,html').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1000);
-            });
-
-            // Active link switching
-            $(window).scroll(function () {
-                var scrollbarLocation = $(this).scrollTop();
-
-                scrollLink.each(function () {
-
-                    var sectionOffset = $(this.hash).offset().top - 20;
-
-                    if (sectionOffset <= scrollbarLocation) {
-                        $(this).parent().addClass('active');
-                        $(this).parent().siblings().removeClass('active');
-                    }
-                })
-            })
-        })
-    </script>
 
 </body>
 
