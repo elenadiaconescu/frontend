@@ -1,108 +1,44 @@
-<html lang="en">
-
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/script.js"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/estilo-geral.css">
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
-
-    <!-- JavaScript and jQuery-->
-    <script type="text/javascript" src="js/jsGeral.js"></script>
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-
-    <!-- Materialize-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- parallax -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.parallax').parallax();
-        });
-
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-
-        $(document).ready(function () {
-            $('.target').pushpin();
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-
-            var scrollLink = $('.scroll');
-
-            // Smooth scrolling
-            scrollLink.click(function (e) {
-                e.preventDefault();
-                $('body,html').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1000);
-            });
-
-            // Active link switching
-            $(window).scroll(function () {
-                var scrollbarLocation = $(this).scrollTop();
-
-                scrollLink.each(function () {
-
-                    var sectionOffset = $(this.hash).offset().top - 20;
-
-                    if (sectionOffset <= scrollbarLocation) {
-                        $(this).parent().addClass('active');
-                        $(this).parent().siblings().removeClass('active');
-                    }
-                })
-            })
-        })
-    </script>
 </head>
-
 <body>
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <div class="nav-wrapper grey darken-4">
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="travels.html">Travels</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-
-                <ul id="slide-out" class="sidenav">
-                    <li><a class="waves-effect" href="index.html">Home</a></li>
-                    <li><a class="waves-effect" href="travels.html">Travels</a></li>
-                    <li><a class="waves-effect" href="projects.html">Projects</a></li>
-                    <li><a class="waves-effect" href="about.html">About</a></li>
-                </ul>
-                <a data-target="slide-out" class="sidenav-trigger" href="#"><i class="material-icons">menu</i></a>
-
-            </div>
-        </nav>
-
-    </header>
-
-    <!-- CONTENT -->
-    <div class="">
+<header>
+    <div class="child">
+        <!--        <img src="images/logo.png" />-->
     </div>
-    <hr />
-    <footer>
-        &copy Elena Diaconescu 2019
-    </footer>
+    <ul class="child">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travels.html">Travels</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</header>
+
+<div class="container">
+    <h1>About</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+
+</div>
+
+<script src="js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
 
 </body>
-
 </html>
