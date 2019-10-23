@@ -1,6 +1,6 @@
 html, body {
 	height:100%;
-	background:#1c1c1c;
+	background:#212121;
 }
 
 a:hover {
@@ -11,6 +11,7 @@ header {
 	display:flex;
 	background:#000;
 	padding-top:18px;
+	padding-bottom: 18px;
 	justify-content:space-around;
 	flex-flow: row wrap;
 }
@@ -36,7 +37,7 @@ ul li {
 ul li a {
 	color:#fff;
 	font-size:.9em;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 
 header div:nth-child(1) {
