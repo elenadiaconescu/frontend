@@ -5,8 +5,6 @@ A nice project where can be found a brief description about my career and what m
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package installed in your environement.
-
 ### Node
 - #### Node installation on Windows
 
