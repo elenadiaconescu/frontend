@@ -1,7 +1,15 @@
 
+header {
+    margin:15px;
+}
+
+body{
+    background-color: #212121;
+}
+
 footer {
     background-color: #333;
     color: #ddd;
     padding: 20px;
-    text-align: left;
+    text-align: center
 }

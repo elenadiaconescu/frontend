@@ -4140,7 +4140,8 @@ nav ul a {
     color: #fff;
     display: block;
     padding: 0 15px;
-    cursor: pointer
+    cursor: pointer;
+    width: 90px
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {

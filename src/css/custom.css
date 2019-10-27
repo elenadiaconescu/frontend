@@ -1,6 +1,6 @@
 html, body {
 	height:100%;
-	background:#1c1c1c;
+	background:#212121;
 }
 
 a:hover {
@@ -11,6 +11,7 @@ header {
 	display:flex;
 	background:#000;
 	padding-top:18px;
+	padding-bottom: 18px;
 	justify-content:space-around;
 	flex-flow: row wrap;
 }
@@ -36,7 +37,11 @@ ul li {
 ul li a {
 	color:#fff;
 	font-size:.9em;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
+}
+
+ul li a:active {
+	color:red;
 }
 
 header div:nth-child(1) {
@@ -47,20 +52,6 @@ header div:nth-child(1) {
 
 header div:nth-child(1) img {
 	margin-left:20px;
-}
-
-#search {
-	background:#3a3a3a url(../images/magnify2.png) no-repeat 5px 5px;
-	border-radius:10px;
-	border:none;
-	outline:none;
-	color:#fff;
-	padding: 4px 4px 4px 25px;
-	display:none;
-}
-
-#magnify {
-	cursor:pointer;
 }
 
 h1, p {
@@ -127,10 +118,6 @@ h1, p {
 		display:block;
 		width:80%;
 		margin: 16px auto 0 auto;
-	}
-
-	#magnify {
-		display:none;
 	}
 
 	.container {
