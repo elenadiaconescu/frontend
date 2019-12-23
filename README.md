@@ -1,6 +1,7 @@
 # Elena Diaconescu
 
 A nice project where can be found a brief description about my career and what motivates me
+It contains also a brief descriptions about the repositories
 
 ---
 ## Requirements
